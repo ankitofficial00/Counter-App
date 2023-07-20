@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div
+      class="w-[100vw] h-[100vh] flex justify-center items-center flex-col bg-[#c8c2ae]"
+    >
+      <div
+        class="flex gap-20 flex-col h-[400px] bg-[#c1839f] w-[330px] items-center justify-end pb-[100px] rounded-xl drop-shadow-6xl grayscale hover:grayscale-0 duration-200"
+      >
+        <div class="text-[#38302e] text-medium text-[40px] font-bold">
+          Counter App
+        </div>
+        <div
+          class="bg-white flex text-[22px] text-[#344151] rounded-sm gap-12 p-3 px-5 w-[250px]"
+        >
+          <button
+            class="border-r-2 border-[#bfbfbf] pr-5"
+            onclick="decrement()"
+            ;
+          >
+            <i class="fa-solid fa-minus"></i>
+          </button>
+          <div class="font-bold" id="count">0</div>
+          <button
+            class="border-l-2 border-[#bfbfbf] pl-5"
+            onclick="increment()"
+            ;
+          >
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
